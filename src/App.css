@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  background-color: #0d6efd;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav div {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 75vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  animation: slideDown 1s ease;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  background-color: #ffc107;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+  background-color: #ffca2c;
+}
+
+/* Services */
+.services {
+  display: flex;
+  gap: 25px;
+  padding: 60px 8%;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+/* Form Pages */
+
+.form-page {
+  min-height: 75vh;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form-box {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+.form-box button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  transform: scale(1.03);
+  background: #0b5ed7;
+}
+/* Booking Results */
+
+.booking-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.booking-container .form-box {
+  margin: 0 auto 30px;
+}
+
+.results {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.results h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.results > p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ticket-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+}
+
+.ticket-card h3 {
+  color: #0d6efd;
+}
+
+.ticket-card button {
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ticket-card button:hover {
+  background: #157347;
+}
+/* Bootstrap Service Cards */
+
+.service-card {
+  transition: 0.4s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  min-height: 50px;
+}
+.booking-confirmation {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  border-top: 5px solid #198754;
+  animation: slideDown 0.5s ease;
+}
+
+.booking-confirmation h2 {
+  color: #198754;
+  margin-bottom: 20px;
+}
+
+.booking-confirmation p {
+  margin: 8px 0;
+}
+
+.confirm-button {
+  margin-top: 15px;
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background: #157347;
+}
+.book-ticket-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.book-ticket-btn:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+.booking-confirmation {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  border-top: 5px solid #198754;
+  animation: slideDown 0.5s ease;
+}
+
+.booking-confirmation h2 {
+  color: #198754;
+  margin-bottom: 20px;
+}
+
+.booking-confirmation p {
+  margin: 10px 0;
+}
+
+.confirm-button {
+  margin-top: 15px;
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirm-button:hover {
+  background: #157347;
+}
+.receipt {
+  margin-top: 25px;
+  padding: 20px;
+  border: 2px dashed #198754;
+  border-radius: 10px;
+  background: #f8fff9;
+}
+
+.receipt h3 {
+  color: #198754;
+  margin-bottom: 15px;
+}
+
+.receipt p {
+  margin: 8px 0;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 70vh;
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .form-page {
+    padding: 25px 15px;
+  }
+
+  .form-box {
+    padding: 25px 20px;
+  }
+
+  .booking-container {
+    width: 100%;
+  }
+
+  .results {
+    padding: 20px 10px;
+  }
+
+  .ticket-card {
+    padding: 15px;
+  }
+
+  .booking-confirmation {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+}
