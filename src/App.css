@@ -198,7 +198,18 @@ footer {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
+  background-color: #ffffff !important;
+  color: #212529 !important;
 }
+
+/* Placeholder text colour */
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+  
+
 
 .form-box input:focus,
 .form-box select:focus,
